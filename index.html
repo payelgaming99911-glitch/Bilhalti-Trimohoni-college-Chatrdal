@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বিলহালতী ত্রিমোহনী অনার্স কলেজ | ডেমো ওয়েবসাইট</title>
+<style>
+:root{--navy:#102a56;--blue:#1756a9;--gold:#e9b949;--ink:#17243a;--muted:#65738a;--paper:#f5f8fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,"Noto Sans Bengali",sans-serif;color:var(--ink);background:#fff}
+.top{background:#0b2042;color:#dce8fb;padding:8px 5%;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 18px #102a5612}
+.nav{max-width:1160px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:800}.seal{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,var(--navy),var(--blue));color:#fff;font-size:22px;border:3px solid #e7edf7}
+.brand small{display:block;color:var(--muted);font-size:11px;font-weight:500}
+nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}nav a{font-size:14px;color:#33445f;text-decoration:none;font-weight:650}nav a:hover{color:var(--blue)}
+.lang{border:1px solid #d7e0ed;background:#fff;border-radius:20px;padding:7px 12px;color:var(--navy);cursor:pointer}
+.hero{background:linear-gradient(115deg,#0b2042eF,#174d91dc),linear-gradient(45deg,#d9e8f7,#fff);color:white;padding:78px 22px}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:36px}
+.eyebrow{color:#f4d27b;font-size:13px;letter-spacing:1px;font-weight:800}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.2;margin:14px 0}.hero p{color:#e1eaf8;max-width:650px;line-height:1.8}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:750;display:inline-block}.primary{background:var(--gold);color:#17243a}.outline{border:1px solid #ffffff88;color:white}
+.hero-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:18px;padding:25px;backdrop-filter:blur(6px)}.hero-card strong{font-size:18px}.hero-card p{font-size:14px;margin-bottom:0}
+.wrap{max-width:1100px;margin:auto;padding:62px 22px}.section-head{text-align:center;margin-bottom:32px}.section-head span{color:var(--blue);font-size:12px;font-weight:850;letter-spacing:1.4px}.section-head h2{margin:8px 0;color:var(--navy);font-size:30px}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e5ebf3;border-radius:14px;padding:22px;background:#fff;box-shadow:0 8px 24px #142b4a08}.card .ico{width:42px;height:42px;border-radius:11px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:21px}.card h3{color:var(--navy);margin:14px 0 8px;font-size:18px}.card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+.about{background:var(--paper)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.placeholder{min-height:270px;border-radius:18px;background:linear-gradient(135deg,#dce9f8,#f2f6fb);display:grid;place-items:center;color:#47658e;text-align:center;padding:25px;border:1px dashed #9fb5d2}.placeholder b{display:block;font-size:18px}.about-copy h2{color:var(--navy);font-size:30px}.about-copy p{color:var(--muted);line-height:1.9}.notice{display:flex;gap:15px;align-items:flex-start;border-bottom:1px solid #e8edf4;padding:16px 0}.date{background:#edf4ff;color:var(--blue);padding:9px 11px;border-radius:9px;text-align:center;min-width:60px;font-weight:800;font-size:13px}.notice h3{margin:0 0 5px;font-size:16px;color:var(--navy)}.notice p{margin:0;color:var(--muted);font-size:13px}
+.staff{background:var(--paper)}.person{text-align:center}.avatar{width:82px;height:82px;border-radius:50%;background:#e4edf9;margin:0 auto 12px;display:grid;place-items:center;font-size:30px;color:#55739c}.person h3{margin:0 0 4px}.person p{margin:0;color:var(--muted);font-size:13px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-box{background:var(--navy);color:#fff;border-radius:16px;padding:26px}.contact-box p{color:#d6e2f4;line-height:1.8}.form input,.form textarea{width:100%;padding:12px;border:1px solid #dce4ef;border-radius:8px;margin:7px 0 12px;font:inherit}.form button{border:0;cursor:pointer}
+footer{background:#081a36;color:#dce6f5;padding:28px 22px;text-align:center;font-size:13px}footer span{color:#f1cc70}
+.demo{background:#fff7df;color:#72530b;text-align:center;padding:9px 15px;font-size:12px}
+@media(max-width:800px){.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:55px 18px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.wrap{padding:45px 18px}.hero-card{display:none}nav a{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="demo">ডেমো ওয়েবসাইট — এটি কলেজের অনুমোদিত বা অফিসিয়াল ওয়েবসাইট নয়। তথ্য প্রকাশের আগে কর্তৃপক্ষের অনুমোদন নিন।</div>
+<div class="top"><span>📍 সিংড়া, নাটোর, বাংলাদেশ</span><span>✉ যোগাযোগ: কলেজ কর্তৃপক্ষের অনুমোদিত ইমেইল যুক্ত হবে</span></div>
+<header><div class="nav">
+ <div class="brand"><div class="seal">বি</div><div>বিলহালতী ত্রিমোহনী অনার্স কলেজ<small>BILHALTI TRIMOHONI HONOURS COLLEGE · DEMO</small></div></div>
+ <nav><a href="#home">হোম</a><a href="#about">কলেজ পরিচিতি</a><a href="#departments">বিভাগ</a><a href="#notice">নোটিশ</a><a href="#teachers">শিক্ষক</a><a href="#contact">যোগাযোগ</a><button class="lang" onclick="toggleLang()">English</button></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+ <div><div class="eyebrow">জ্ঞান · শৃঙ্খলা · সাফল্য</div><h1>শিক্ষার আলোয় গড়ি<br>আগামীর বাংলাদেশ</h1><p>বিলহালতী ত্রিমোহনী অনার্স কলেজের ডেমো ওয়েবসাইটে স্বাগতম। এখানে কলেজের পরিচিতি, বিভাগ, নোটিশ ও যোগাযোগের তথ্য এক জায়গায় সাজানো হয়েছে।</p><div class="actions"><a class="btn primary" href="#notice">সর্বশেষ নোটিশ</a><a class="btn outline" href="#about">কলেজ সম্পর্কে</a></div></div>
+ <div class="hero-card"><strong>স্বাগতম শিক্ষার্থী ও অভিভাবক</strong><p>এই অংশে কলেজের অধ্যক্ষের অনুমোদিত স্বাগত বার্তা, প্রতিষ্ঠার ইতিহাস এবং গুরুত্বপূর্ণ তথ্য যুক্ত করা যাবে।</p></div>
+</div></section>
+<section class="wrap" id="departments"><div class="section-head"><span>ACADEMIC INFORMATION</span><h2>একাডেমিক কার্যক্রম</h2><p>কলেজের প্রকৃত বিভাগ ও বিষয় কর্তৃপক্ষের কাছ থেকে যাচাই করে যুক্ত করতে হবে।</p></div>
+<div class="grid">
+ <div class="card"><div class="ico">📚</div><h3>উচ্চমাধ্যমিক</h3><p>একাদশ ও দ্বাদশ শ্রেণির বিভাগ, বিষয় এবং পাঠ্যক্রমের তথ্য এখানে থাকবে।</p></div>
+ <div class="card"><div class="ico">🎓</div><h3>অনার্স</h3><p>অনার্সের অনুমোদিত বিষয়, শিক্ষাবর্ষ ও ভর্তি-সংক্রান্ত তথ্য এখানে প্রকাশ করা যাবে।</p></div>
+ <div class="card"><div class="ico">📝</div><h3>পরীক্ষা ও ফলাফল</h3><p>পরীক্ষার সময়সূচি, ফলাফল দেখার নির্দেশনা ও প্রয়োজনীয় ঘোষণা এখানে থাকবে।</p></div>
+</div></section>
+<section class="about" id="about"><div class="wrap about-grid"><div class="placeholder"><div>🏫<b>কলেজ ভবনের ছবি</b><small>এখানে অনুমোদিত ক্যাম্পাসের ছবি বসবে</small></div></div><div class="about-copy"><span class="eyebrow">ABOUT OUR COLLEGE</span><h2>কলেজ পরিচিতি</h2><p>এই অংশে কলেজের প্রতিষ্ঠার সাল, ইতিহাস, লক্ষ্য, শিক্ষার পরিবেশ, অবকাঠামো ও অর্জনের যাচাইকৃত তথ্য যুক্ত করা হবে।</p><p><b>দ্রষ্টব্য:</b> ডেমোতে কোনো অযাচাইকৃত প্রতিষ্ঠাকাল, EIIN, ফোন নম্বর বা শিক্ষক-তথ্য প্রকাশ করা হয়নি।</p></div></div></section>
+<section class="wrap" id="notice"><div class="section-head"><span>NOTICE BOARD</span><h2>নোটিশ বোর্ড</h2><p>নমুনা নোটিশ — আসল বিজ্ঞপ্তি নয়।</p></div>
+<div class="card">
+ <div class="notice"><div class="date">নমুনা</div><div><h3>ভর্তি সংক্রান্ত বিজ্ঞপ্তি</h3><p>ভর্তির তারিখ, যোগ্যতা ও প্রয়োজনীয় কাগজপত্র কর্তৃপক্ষের অনুমোদনের পর এখানে প্রকাশ হবে।</p></div></div>
+ <div class="notice"><div class="date">নমুনা</div><div><h3>পরীক্ষার সময়সূচি</h3><p>পরীক্ষার তারিখ ও সময়সূচির PDF বা লিংক এখানে যুক্ত করা যাবে।</p></div></div>
+ <div class="notice"><div class="date">নমুনা</div><div><h3>জরুরি ঘোষণা</h3><p>কলেজের অনুমোদিত জরুরি ঘোষণা এখানে প্রকাশ করা যাবে।</p></div></div>
+</div></section>
+<section class="staff" id="teachers"><div class="wrap"><div class="section-head"><span>OUR PEOPLE</span><h2>শিক্ষক ও কর্মকর্তা</h2><p>নাম ও ছবি কলেজ কর্তৃপক্ষের অনুমোদন নিয়ে যুক্ত করতে হবে।</p></div>
+<div class="grid"><div class="card person"><div class="avatar">👤</div><h3>অধ্যক্ষ</h3><p>নাম ও পরিচিতি যুক্ত হবে</p></div><div class="card person"><div class="avatar">👤</div><h3>শিক্ষকমণ্ডলী</h3><p>বিভাগভিত্তিক তালিকা যুক্ত হবে</p></div><div class="card person"><div class="avatar">👤</div><h3>অফিস কর্মচারী</h3><p>অনুমোদিত তালিকা যুক্ত হবে</p></div></div></div></section>
+<section class="wrap" id="contact"><div class="section-head"><span>GET IN TOUCH</span><h2>যোগাযোগ</h2><p>যাচাইকৃত ঠিকানা ও যোগাযোগের তথ্য পরে যুক্ত করুন।</p></div>
+<div class="contact-grid"><div class="contact-box"><h3>কলেজের ঠিকানা</h3><p>বিলহালতী ত্রিমোহনী অনার্স কলেজ<br>সিংড়া, নাটোর, বাংলাদেশ</p><p>ফোন: কর্তৃপক্ষের অনুমোদিত নম্বর<br>ইমেইল: অনুমোদিত ইমেইল যুক্ত হবে</p></div>
+<form class="card form" onsubmit="event.preventDefault();alert('এটি শুধু ডেমো ফর্ম। বার্তা পাঠানো হয়নি।')"><h3>বার্তা পাঠান</h3><input required placeholder="আপনার নাম"><input type="email" required placeholder="ইমেইল"><textarea rows="4" required placeholder="আপনার বার্তা"></textarea><button class="btn primary" type="submit">জমা দিন</button><small style="display:block;color:#65738a;margin-top:9px">ডেমো ফর্ম: কোনো তথ্য কোথাও পাঠানো হয় না।</small></form></div>
+</section>
+</main>
+<footer>© <span>বিলহালতী ত্রিমোহনী অনার্স কলেজ</span> — ওয়েবসাইট ডেমো | কলেজ কর্তৃপক্ষের অনুমোদনসাপেক্ষে প্রকাশযোগ্য</footer>
+<script>
+function toggleLang(){alert('English version is a future demo feature.');}
+</script>
+</body></html>
